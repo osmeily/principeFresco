@@ -5,19 +5,16 @@ const endpoint = 'http://localhost:4000/productos';
 
 const element = document.querySelector('.list-group');
 
-
 document.addEventListener('DOMContentLoaded', () => {
 
     //ver si el endpoint esta funcionando apenas se cargue el DOM
     //console.log(endpoint);
-
     /* Obtener data de la endpoint */
-    const data = getData(endpoint);
+    var data = getData(endpoint);
     //console.log(data);//este console es importante para ver que esta retornando la funcion
     showData(data,element);
 
 })
-
 
 //CAPTURAR EVENTO DE LOS ELEMENTOS IMPRESOS EN EL HTML
 element.addEventListener('click', async(e) => {
@@ -46,3 +43,6 @@ element.addEventListener('click', async(e) => {
         window.location.href = "./detail.html"
     }
 })
+
+//Funciones de carrito
+

@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #D5D5D5;
+    background: #fff;
 }
 
 a {
@@ -49,12 +49,12 @@ a {
 
 .header .menu .logo {
     flex: 1 1 auto;
-    color: rgb(199, 102, 102);
+    color: rgb(0, 0, 0);
     font-size: 30px;
 }
 
 .header .menu .logo a {
-    color: rgb(226, 108, 108);
+    color: rgb(0, 0, 0);
 }
 
 .header .menu .logo a:hover {
@@ -67,7 +67,7 @@ a {
 }
 
 .header .menu .nav a {
-    color: rgb(196, 89, 89);
+    color: rgb(0, 0, 0);
     font-size: 11px;
     text-transform: uppercase;
     padding: 0 10px;
@@ -84,7 +84,7 @@ a {
 }
 
 .header .menu .icon_sociales a {
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-size: 18px;
     padding: 0 5px;
 }

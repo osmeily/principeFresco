@@ -7,7 +7,6 @@ document.getElementById('inputId').style.display = 'none';
 const ul = document.querySelector('.lista-productos');
 
 //console.log(endpoint);
-
 //peticion get, lectura de datos
 const getUser = async () => {
 
@@ -26,7 +25,7 @@ const getUser = async () => {
         <img src=${img} width="50px"></img>
         <span class="lead">${name}</span>
         <button id=${id} class="btn btn-dark btm-sm float-end ">
-           Borrar
+        Borrar
         </button>
         </li>
         `
@@ -145,11 +144,9 @@ btnModificar.addEventListener('click', async () => {
         alert('Llenar todos los campos')
     }
     else {
-
         //captura de la caja de texto id
         const id = document.getElementById('inputId').value;
         console.log(dataMod);
-
         await fetch(endpoint + id, {
             //metodo tipo PUT
             method: 'PUT',
@@ -160,5 +157,4 @@ btnModificar.addEventListener('click', async () => {
             }
         })
     }
-
 })

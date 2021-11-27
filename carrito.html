@@ -13,7 +13,7 @@
     <!-- CSS-->
     <link rel="stylesheet" href="./styles/style.css">
 
-    <title>Principe Fresco</title>
+    <title>Carrito</title>
 </head>
 
 <body>
@@ -24,9 +24,7 @@
         <header class="header img-div">
             <div class="menu margen_interno">
                 <div class="logo">
-                    <a href="index.html"><img
-                            src="https://res.cloudinary.com/osmeily/image/upload/v1638023644/Principe-Fresco/Pr%C3%ADncipe_fresco_my4vfr.png"
-                            alt=""></a>
+                    <a href="index.html">Principe Fresco</a>
                 </div>
                 <nav class="nav">
                     <a href=""><i class="fas fa-home"></i> <span class="off">SHOP</span></a>
@@ -35,7 +33,7 @@
                 </nav>
                 <div class="icon_sociales">
                     <div><a href="" target="_blank"><i class="fas fa-shopping-bag"></i></a></div>
-                    <div><a href=""><i class="fas fa-user"></i></a></div>
+                    <div><a href="" target="_blank"><i class="fas fa-user"></i></a></div>
 
                 </div>
             </div>
@@ -46,56 +44,31 @@
         </header>
 
 
-        <!-- CRUD -->
+
+
+        <!---------------------------Cuerpo de la pagina---------------------------->
+
+        <h2 class="h4 m-4 text-primary text-center">Carrito</h2>
+
+        <!--=====================Pagina principal tarjetas de productos========================-->
 
         <div class="container mt-5">
 
             <hr />
             <div class="row">
 
-                <div div class="col-7">
-                    <h3 class="text-center">Lista de Productos</h3>
-                    <ul class="lista-productos">
+                <div div class="col-12">
+                    <h3 class="text-center"></h3>
+                    <ul class="listCarrito">
 
                     </ul>
                 </div>
 
-                <div div class="col-5">
-                    <h3 class="text-center"> Agregar/ Borrar Producto </h3>
 
-                    <form class="form-group">
-                        <input id="inputUrl" type="text" class="form-control " placeholder="Url imagen del Producto"
-                            name="url" required />
-
-                        <input id="inputNombre" type="text" class="form-control mt-2" name="nombre" autoComplete="off"
-                            placeholder="Nombre del Producto" required />
-
-                        <input id="inputPrice" type="number" class="form-control mt-2" name="price" autoComplete="off"
-                            placeholder="Precio del producto" required />
-
-                        <textarea id="inputDescripcion" class="form-control mt-2" autoComplete="off" name="descripcion"
-                            placeholder="Descripción del Producto" required></textarea>
-
-                        <input id="inputId" type="text" class="form-control mt-2" name="id" autoComplete="off" />
-
-                        <div class="d-grid gap-2 mx-auto mt-2">
-                            <button type="submit" class="btn btn-dark">
-                                Guardar Producto
-                            </button>
-                            <button id="btnNombre" type="button" class="btn btn-dark">
-                                Buscar producto por nombre
-                            </button>
-                            <button id="btnModificar" type="button" class="btn btn-dark">
-                                Modificar Producto
-                            </button>
-                        </div>
-                    </form>
-                </div>
 
             </div>
         </div>
 
-        <!--  -->
 
 
 
@@ -124,10 +97,11 @@
 
 
     <!--Script index-->
-    <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/main2.js" type="module"></script>
 
     <!--Script agregarProducto-->
-    <script src="scripts/agregarProductos.js" type="module"></script>
+    <script src="scripts/carrito.js" type="module"></script>
 
 </body>
+
 </html>
