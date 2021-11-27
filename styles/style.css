@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #D5D5D5;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* contenedor padre */
+.padre {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.margen_interno {
+    padding: 0 50px;
+}
+
+/* Header */
+
+.header {
+    background: url(https://res.cloudinary.com/osmeily/image/upload/v1638023661/Principe-Fresco/cover_iitlzi.png);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+}
+
+.header .menu {
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-flow: row nowrap;
+    height: 60px;
+    align-items: center;
+    border-bottom: 1px solid rgba(95, 35, 100, 0.5);
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+}
+
+.header .menu .logo {
+    flex: 1 1 auto;
+    color: rgb(199, 102, 102);
+    font-size: 30px;
+}
+
+.header .menu .logo a {
+    color: rgb(226, 108, 108);
+}
+
+.header .menu .logo a:hover {
+    color: #343434;
+}
+
+.header .menu .nav {
+    flex: 5 1 auto;
+    display: flex;
+}
+
+.header .menu .nav a {
+    color: rgb(196, 89, 89);
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    letter-spacing: 2px;
+}
+
+.header .menu .nav a:hover {
+    color: #343434;
+}
+
+.header .menu .icon_sociales {
+    flex: 1 1 auto;
+    display: flex;
+}
+
+.header .menu .icon_sociales a {
+    color: #fff;
+    font-size: 18px;
+    padding: 0 5px;
+}
+
+.header .menu .icon_sociales a:hover {
+    color: #343434;
+}
+
+.header .texto_principal {
+    height: 90px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.header .texto_principal h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: rgba(137, 0, 248, 0.7);
+    text-shadow: 2px 2px 2px #333;
+    font-weight: 300;
+    display: flex;
+    text-align: center;
+    line-height: 1.6;
+}
+
+
+
+/* Consultas de medios // media querys */
+@media all and (max-width: 1120px) {
+    .section {
+        flex-direction: column;
+    }
+
+    .header .menu {
+        flex-direction: column;
+        height: auto;
+        margin: 0px;
+    }
+
+    .header .menu .logo {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .header .menu .nav {
+        margin-bottom: 10px;
+    }
+
+    .header .menu .icon_sociales {
+        margin-bottom: 10px;
+    }
+
+    .header .texto_principal h1 {
+        font-size: 40px;
+        margin-top: 50px;
+    }
+
+}
+
+@media all and (max-width: 730px) {
+    .off {
+        display: none;
+    }
+
+    .header .menu .nav a {
+        font-size: 20px;
+    }
+
+    .header .texto_principal h1 {
+        font-size: 35px;
+    }
+}
+
+
+/* ------------- @ media del Video -------------- */
+@media (max-width: 850px) {
+    #medio iframe {
+        width: 600px;
+        height: 380px;
+    }
+
+}
+
+@media (max-width: 640px) {
+    #medio iframe {
+        width: 410px;
+        height: 260px;
+    }
+
+}
+
+/* Media querys para la tabla de productos */
+@media (max-width: 1070px) {
+    .columna_tabla {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .columna_tabla {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----- ----- Footer ----- -----*/
+
+.footer {
+    background: #000;
+    margin-top: 100px;
+    flex-direction: row;
+}
+
+.footer .pie {
+    text-align: center;
+    padding: 20px;
+    align-items: center;
+}
+
+.footer ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    color: #fff;
+}
+
+.footer li a {
+    padding: 1em;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 0 20px;
+    letter-spacing: 3px;
+}
+
+.footer p {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    padding: 0;
+    margin-top: 0;
+    color: #fff;
+    letter-spacing: 1px;
+}
